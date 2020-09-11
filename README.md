@@ -12,7 +12,8 @@ Develop infrastructure as code using terraform/Cloud deployment manager for depl
 - Pipeline logs and errors for code defects and unanticipated behavior
 
 # Methodology
-
-# Installtion
-
+Build the pipeline
+# Installation
+Clone the repo, add secrets, shake, and serve over ice.
 # Notes
+Libations recommended.
