@@ -11,4 +11,8 @@ Develop infrastructure as code using terraform/Cloud deployment manager for depl
 - Pipeline metrics for system lag and data correctness
 - Pipeline logs and errors for code defects and unanticipated behavior
 
+# Methodology
 
+# Installtion
+
+# Notes
