@@ -14,7 +14,7 @@ Develop infrastructure as code using terraform/Cloud deployment manager for depl
 # Methodology
 Build the pipeline
 # Installation
-Clone the repo, add secrets, shake, and serve over ice.
+Clone the repo, add secrets, -shake- stir, and serve over ice.
 # Notes
 Libations recommended.
 https://www.beeradvocate.com/beer/profile/1199/493129/
