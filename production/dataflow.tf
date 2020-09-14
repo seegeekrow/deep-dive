@@ -1,6 +1,6 @@
 
-source "google_dataflow_job" "big_data_job" {
-  name              = vars.job_name
+resource "google_dataflow_job" "big_data_job" {
+  name              = var.job_name
   template_gcs_path = "gs://dataflow-templates/latest/Word_Count"
   temp_gcs_location = "gs://${var.bucket_name}/temp"
   parameters = {
