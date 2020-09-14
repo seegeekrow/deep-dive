@@ -5,9 +5,9 @@ resource "google_storage_bucket" "dataflow-jobs" {
 }
 
 resource "google_storage_bucket_object" "data-file" {
-  name   = "COVID-19_Historical_Data_Table.json"
+  name   = "input/COVID-19_Historical_Data_Table.json"
   source = "/home/karl/source/deep-dive/data/COVID-19_Historical_Data_Table.json"
   bucket = var.bucket_name
 
-  depends_on = [google_storage_bucket.dataflow-jobs]
+  depends_on = [google_cloudfunctions_function.function]
 }
