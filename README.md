@@ -12,7 +12,13 @@ Develop infrastructure as code using terraform/Cloud deployment manager for depl
 - Pipeline logs and errors for code defects and unanticipated behavior
 
 # Methodology
-Build the pipeline
+Build the pipeline:
+- Create bucket and upload data with Terraform
+-- Bonus: maybe save state in GCS backend.
+- Trigger Dataflow/Apache Beam job with Cloud Function
+- Output to GCS and send Errors to Pub/Sub
+- Build Dashboard for job metrics in Stackdriver. 
+- Errors in Pub/Sub could be picked up to by cloud function to rerun job.
 # Installation
 Clone the repo, add secrets, -shake- stir, and serve over ice.
 # Notes
