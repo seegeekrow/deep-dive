@@ -19,6 +19,7 @@ Build the pipeline:
 - Output to GCS ~and send Errors to Pub/Sub~
 - Build Dashboard for job metrics in Stackdriver. 
 - Errors in Pub/Sub could be picked up to by cloud function to rerun job.
+
 # Installation
 Clone the repo, add secrets, -shake- stir, and serve over ice.
 - Clone repo locally.
@@ -32,3 +33,7 @@ Clone the repo, add secrets, -shake- stir, and serve over ice.
 # Notes
 Libations recommended.
 https://www.beeradvocate.com/beer/profile/1199/493129/
+
+Initially, my thought was to have this done through Dataflow, Pub/Sub, GCS, and Cloud Functions. But as I
+dug into the what I could do with Terraform a bit deeper, the more it seemed there wasn't a need to a 
+layers where terrform could handle
