@@ -1,4 +1,4 @@
-
+/*
 resource "google_storage_bucket_object" "archive" {
   name   = "scripts/function-source.zip"
   bucket = var.bucket_name
@@ -20,7 +20,8 @@ resource "google_cloudfunctions_function" "function" {
   entry_point           = "hello_gcs"
 
 }
-  /*
+*/
+/*
   environment_variables = {
     MY_ENV_VAR = "my-env-var-value"
   }
