@@ -21,6 +21,14 @@ Build the pipeline:
 - Errors in Pub/Sub could be picked up to by cloud function to rerun job.
 # Installation
 Clone the repo, add secrets, -shake- stir, and serve over ice.
+- Clone repo locally.
+- Set variables in the `variables.tf`
+- Make sure `terraform` is installed in path
+- Run
+- `terraform init`
+- `terraform plan --out 1.plan`
+- `terraform apply 1.plan`
+
 # Notes
 Libations recommended.
 https://www.beeradvocate.com/beer/profile/1199/493129/
