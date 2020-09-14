@@ -1,3 +1,4 @@
+/*
 resource "google_compute_instance" "vm_instance" {
   name         = var.job_name
   machine_type = "f1-micro"
@@ -15,3 +16,4 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
 }
+*/
