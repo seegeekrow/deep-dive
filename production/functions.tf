@@ -15,10 +15,7 @@ resource "google_cloudfunctions_function" "function" {
   available_memory_mb   = 128
   source_archive_bucket = var.bucket_name
   source_archive_object = google_storage_bucket_object.archive.name
-  event_trigger = {[
-      event_type = "google.storage.object.finalize",
-      resource = var.bucket_name
-  ]}
+  trigger_http          = true
   timeout               = 60
   entry_point           = "hello_gcs"
 
