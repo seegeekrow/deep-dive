@@ -21,3 +21,8 @@ description = "Dataflow job name."
 type        = string
 default     = "deep-dive-dataflow"
 }
+
+resource "random_id" "job_id" {
+ byte_length = 4
+}
+
