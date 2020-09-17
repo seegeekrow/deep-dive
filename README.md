@@ -14,7 +14,7 @@ Develop infrastructure as code using terraform/Cloud deployment manager for depl
 # Methodology
 Build the pipeline:
 - [x] Create bucket and upload data with Terraform
-- [x] Bonus: maybe save state in GCS backend.
+- [x] Bonus: maybe save state in GCS backend. :boom: :microphone:
 - [x] Trigger Dataflow/Apache Beam job with ~Cloud Function~ Terraform
 - [x] Output to GCS ~and send Errors to Pub/Sub~
 - [x] Build Dashboard for job metrics in Stackdriver.
