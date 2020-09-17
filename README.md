@@ -20,6 +20,7 @@ Build the pipeline:
 - [x] Build Dashboard for job metrics in Stackdriver.
 - [ ] Bonus: create dashboard with Terraform on-demand
 - [ ] Errors in Pub/Sub could be picked up to by cloud function to rerun job.
+- [ ] Setup Vault to store credentials
 
 # Installation
 Clone the repo, add secrets, -shake- stir, and serve over ice.
