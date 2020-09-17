@@ -1,7 +1,7 @@
 variable "project_id" {
 description = "Google Project."
 type        = string
-default     = "learning-dataflow-289320"
+default     = "<Google Project ID>"
 }
 
 variable "bucket_name" {
