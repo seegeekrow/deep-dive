@@ -25,7 +25,7 @@ Clone the repo, add secrets, -shake- stir, and serve over ice.
 - Clone repo locally.
 - Set variables in the `variables.tf`
 - Make sure `terraform` is installed in path
-- Run
+## Run the following
 - `terraform init`
 - `terraform plan --out 1.plan`
 - `terraform apply 1.plan`
