@@ -32,7 +32,8 @@ Clone the repo, add secrets, -shake- stir, and serve over ice.
 
 # Notes
 Libations recommended.
-https://www.beeradvocate.com/beer/profile/1199/493129/
+~https://www.beeradvocate.com/beer/profile/1199/493129/~
+https://www.beeradvocate.com/beer/profile/1199/79271/
 
 ## Scoping
 Initially, my thought was to have this done through Dataflow, Pub/Sub, GCS, and Cloud Functions. But as I
