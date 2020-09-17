@@ -26,3 +26,8 @@ resource "random_id" "job_id" {
  byte_length = 4
 }
 
+variable "terraform_backend" {
+    description = "Terraform Backend location"
+    type        = string
+    default        = "gs://deep-dive-tfstate"
+}
