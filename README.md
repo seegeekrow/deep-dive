@@ -32,12 +32,15 @@ Clone the repo, add secrets, -shake- stir, and serve over ice.
 
 # Notes
 Libations recommended.
-~https://www.beeradvocate.com/beer/profile/1199/493129/~
-https://www.beeradvocate.com/beer/profile/1199/79271/
+- ~https://www.beeradvocate.com/beer/profile/1199/493129/~
+- https://www.beeradvocate.com/beer/profile/1199/79271/
 
 ## Scoping
 Initially, my thought was to have this done through Dataflow, Pub/Sub, GCS, and Cloud Functions. But as I
 dug into the what I could do with Terraform a bit deeper, the more it seemed there wasn't a need to add 
 layers where terrform could already handle it.
 
-After some testing of functionality between an instance in GCE versus a Dataflow template and having storage in GCS; the most direct route was to run jobs through dataflow templates. There are numerous options out of the box and the ability to write custom ones. Further, with Terraform, these templates can be called and run.
+After some testing of functionality between an instance in GCE versus a Dataflow template and having storage in GCS; the most direct route was to run jobs through dataflow templates. There are numerous options out of the box and the ability to write custom ones. Further, with Terraform, these templates can be called and run. 
+
+## Metrics
+The Monitoring offering in GCP is suffcient in this use case. It can provide metrics around the pipeline jobs and infrastruture elements. In a more complex setup, it would be a better choice to collect the metrics in a different system. This could be a simple as exporting to Big Query and fronting it with Grafana or sending the data to a more robust system. The idea, though, would be to have a way to alert and action metrics from disparate sources. 
