@@ -1,6 +1,6 @@
 terraform {
   backend "gcs"{
-    bucket      = var.terraform_backend
+    bucket      = "gs://deep-dive-tfstate"
     prefix      = "prod"
   }
 }
